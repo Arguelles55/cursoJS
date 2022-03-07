@@ -47,8 +47,6 @@ class Persona {
     static saludar2(persona){
         console.log(persona._nombre + ' ' + persona._apellido);
     }
-
-    
 }
 
 
