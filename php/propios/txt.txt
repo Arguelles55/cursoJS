@@ -1,0 +1,1 @@
+O:7:"Mascota":1:{s:6:"nombre";s:3:"Pow";}

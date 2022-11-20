@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <style>
+      .azul {
+        color: blue;
+      }
+    </style>
+
+    <h2 id="cabecero">Ejemplo de formulari con JS :v</h2>
+    <!-- <p id="parrafo" class="azul">parrafo del dom (azul)!!</p> -->
+    <!-- <p id="parrafo2" class="azul">segundo parrafo (azul) =P </p> -->
+
+    <script>
+      /* let cabecero = document.getElementById('cabecero').innerHTML;
+    let parrafo = document.getElementById('parrafo');
+    let parrafo2 =document.getElementById('parrafo2');
+    */
+
+      /*   console.log('cabecero :' + cabecero);
+    console.log('parrafo :' + parrafo.innerHTML);
+    parrafo.innerHTML = 'Nuevo valor del parrafo';
+    console.log(`2do parrafo: ${parrafo2.innerHTML}`);
+*/
+
+      /*  //byClassName funciona igual
+let parrafos = document.getElementsByTagName('p');
+console.log(`No. de parrafos: ${parrafos.length}`);
+
+ for (let i = 0; i < parrafos.length; i++) {
+    console.log(`p: ${[i+1]} - ${parrafos[i].innerHTML} `);
+}  
+for (parrafo of parrafos){
+
+    console.log(`parrafo: ${parrafo.innerHTML} `);
+} 
+
+let parrafoAzul = document.querySelectorAll('p.azul');
+console.log(`parrafos azules: ${parrafoAzul.length}`);
+
+for (let i = 0; i < parrafoAzul.length; i++) {
+    console.log(`p: ${parrafoAzul[i].innerHTML}`);
+}
+*/
+    </script>
+    <!--
+    <form id="formulario">
+      Nombre: <input type="text" name="nombre" value="Luis" />
+      <br/>
+      Apellido: <input type="text" name="apellido" value="Argüelles" />
+      <br/>
+    </form>
+    <button onclick="MostrarValores()">Ver</button>
+
+    <script>
+      function MostrarValores() {
+        let formulario = document.forms["formulario"];
+        let texto = "";
+        for (let elemento of formulario) {
+          texto += elemento.value;
+        }
+        console.log(texto);
+      }
+    </script>
+-->
+
+    <form id="formulario">
+    Nombre:  <input type="text" name="nombre" value="" />
+      <br />
+    Apellido:  <input type="text" name ="apellido" value="" />
+      <br />
+    </form>
+
+    <button onclick="MostrarValores()">Ver... =P</button>
+
+    <div id="valores">    </div>
+
+    <script>
+        function MostrarValores(){
+        let formulario = document.forms['formulario'];
+        let texto = '';
+        let nombre = formulario['nombre'];
+        let apellido = formulario['apellido'];
+        texto = nombre.value + '<br/>' + apellido.value;
+        document.getElementById('valores').innerHTML = texto;
+        }
+    </script>
+
+
+  </body></html>
+ 

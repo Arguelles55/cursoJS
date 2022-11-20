@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manejo de dom con JavaScript</title>
+  </head>
+  <body>
+
+  
+  <!--  <h1 onclick="CambiarTitulo(this)">Manejo de DOM desde JavaScript</h1>-->
+
+  
+  <h1 id="show">Título 1</h1>
+  <div id="title" style="font-size:32px; color: blueviolet; font-weight: 700;" ></div>
+    <!--  <button onclick="Mostrar()">Mostrar</button>
+    <img id="img" src="http://globalmentoring.com.mx/imagenes/javascript.png">  -->
+
+    <script>
+       /*  //document.write('saludos desde write();');
+       function Mostrar(){
+            //document.getElementById('title').innerHTML += '<br/> Nuevo títlo';
+            //document.getElementById('img').src= 'http://globalmentoring.com.mx/imagenes/html5.png'
+            //document.getElementById('title').style.color = 'blue';
+        }  */
+      /*  function CambiarTitulo(title) {
+            title.innerHTML = 'cambié el título';
+        }  */
+
+      
+        document.getElementById('show').onclick = CambiarTxt;
+        
+        function CambiarTxt() {
+            document.getElementById('title').innerHTML = 'Nuevo título';
+        }
+
+        
+    </script>
+
+  </body></html>
+ 

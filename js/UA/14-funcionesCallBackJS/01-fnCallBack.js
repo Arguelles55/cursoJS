@@ -1,3 +1,4 @@
+/*
 miFuncion1();
 miFuncion2();
 
@@ -10,16 +11,28 @@ function miFuncion2() {
 }
 
 //funciones callback
-function imp(msg) {
+// function imp(msg) {
+//   console.log(msg);
+// }
+
+// function sumar(n1, n2, fnCb) {
+//   let res = n1 + n2;
+//   fnCb(`Resultado: ${res}`);
+// }
+
+// sumar(3, 5, imp);
+
+
+
+function imprimir(msg) {
   console.log(msg);
 }
 
-function sumar(n1, n2, fnCb) {
-  let res = n1 + n2;
-  fnCb(`Resultado: ${res}`);
+
+function sumar(n1, n2, ) {
+    
 }
 
-sumar(3, 5, imp);
 
 //llamadas asincronas con setTimeout
 
@@ -33,3 +46,26 @@ setTimeout(function () {
 }, 4000);
 
 setTimeout(() => console.log("callback 3 seg."), 3000);
+
+
+function imprimir(mensaje) {
+  console.log(mensaje);
+}
+
+function sumar(n1, n2, fncb) {
+  let res = n1 + n2;
+  fncb(`resultado = ${res}`);
+}
+
+sumar (2, 3,imprimir);
+ 
+setTimeout(()=> console.log('setTimeOut después de 15 seg'), 15000);
+
+let hora = () => {
+  let tiempo = new Date(); 
+  console.log(`${tiempo.getHours()}:${tiempo.getMinutes()}:${tiempo.getSeconds()}`);
+}
+
+setInterval(hora, 1000);
+
+*/

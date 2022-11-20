@@ -30,18 +30,18 @@ do {
  * 3 y 5 Imprimir FIZZ BUZZ
  */
 
-// For Loop.
-// for($i = 1; $i < 1000; $i++ ):
-//     if($i % 3 === 0 && $i % 5 === 0):
-//         echo $i . " - FIZZ BUZZ <br/>";
-//     elseif($i % 3 === 0):
-//         echo $i . " - Fizz <br/>";
-//     elseif($i % 5 === 0 ):
-//         echo $i . " - Buzz <br/>";
-//     else:
-//         echo $i . "<br/>";
-//     endif;
-// endfor;
+//For Loop.
+for($i = 1; $i < 1000; $i++ ):
+    if($i % 3 === 0 && $i % 5 === 0):
+        echo $i . " - FIZZ BUZZ <br/>";
+    elseif($i % 3 === 0):
+        echo $i . " - Fizz <br/>";
+    elseif($i % 5 === 0 ):
+        echo $i . " - Buzz <br/>";
+    else:
+        echo $i . "<br/>";
+    endif;
+endfor;
 
 
 // For Each
